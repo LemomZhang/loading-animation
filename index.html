@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+           
+            position: absolute;
+            width: 70px;
+            height: 20px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        .wrap>div{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            border-radius: 50%;
+            background: lightcoral;
+            display: inline-block;
+            animation: s .5s linear 0s infinite alternate;
+        }
+        @keyframes s{
+            0%{
+                top:0px;
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            100%{
+                top:10px;
+                opacity: 0;
+               
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
